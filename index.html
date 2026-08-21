@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TWH SHO Viewer</title>
+
+    <script>
+        const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent);
+        if (isIOS) {
+            window.location.href = "https://onedrive.live.com/personal/09eea5501996ee7d/_layouts/15/Doc.aspx?sourcedoc=%7B1996EE7D-A550-20EE-8009-BA1300000000%7D&file=SHO%20(Tier%202)%20TWH.xlsx&action=embedview&wdHideGridlines=True&wdDownloadButton=False&wdInConfigurator=True&wdAllowInteractivity=False";
+        }
+    </script>
+
     <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            height: 100%;
-            overflow: hidden;
-            background: #ffffff;
-        }
-        iframe {
-            border: none;
-            width: 100vw;
-            height: 100vh;
-        }
+        html, body { margin: 0; padding: 0; height: 100%; overflow: hidden; background: #ffffff; }
+        iframe { border: none; width: 100vw; height: 100vh; }
     </style>
 </head>
+
 <body>
     <iframe 
         src="https://onedrive.live.com/personal/09eea5501996ee7d/_layouts/15/Doc.aspx?sourcedoc=%7B1996EE7D-A550-20EE-8009-BA1300000000%7D&file=SHO%20(Tier%202)%20TWH.xlsx&action=embedview&wdHideGridlines=True&wdDownloadButton=False&wdInConfigurator=True&wdAllowInteractivity=False"
